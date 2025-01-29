@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(900, 900);
   noStroke();
+  colorMode(HSB); 
 }
 
 function draw() {
@@ -10,9 +11,10 @@ function draw() {
     let x = random(width);
     let y = random(height);
     let balloonsize = random(30, 70);
-    let colorBalloon = color(random(255), random(255), random(255));
+    let colorBalloon = color(random(255), random(100, 255), random(100, 255));
+    let satValue = saturation(colorBalloon);
     
-    fill(colorBalloon);
+    fill(colorBalloon); 
     ellipse(x, y, balloonsize, balloonsize);
   }
 }
