@@ -25,3 +25,13 @@ https://clementine0507.github.io/workshop-1/
 
 
 New item
+
+![image](https://github.com/user-attachments/assets/75911acf-72f9-405f-90f1-c873adbf8ea4)
+
+![image](https://github.com/user-attachments/assets/03f63a82-6bf7-442c-b960-58bea0cee6dd)
+
+![image](https://github.com/user-attachments/assets/211e205e-df45-4e3a-85cc-debb046baec8)
+
+The colorBalloon variable is created in draw() and used to generate the color of the balloon, so I use the saturation() function of colorBalloon to get its saturation.
+
+![image](https://github.com/user-attachments/assets/12513f73-fe36-41de-929c-690371e611c8)
