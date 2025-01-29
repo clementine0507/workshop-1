@@ -9,35 +9,13 @@ https://clementine0507.github.io/workshop-1/
 
 #### Processing
 
-function setup() {
+![image](https://github.com/user-attachments/assets/f7cd29b4-764d-4136-8f4a-93884da6ac22)
 
-  createCanvas(900, 900);
+· Use createCanvas(900, 900) to create a 900x900 canvas for drawing.
+· Apply noStroke() to remove the outline of shapes, which results in smoother edges.
+· Use setInterval(colorBalloons, 1000) to call the colorBalloons function every second, controlling the speed of balloon generation.
+· Use background(220) to set a background color. This ensures that every frame of the drawing has a clean background, preventing the old balloons from lingering.
+· In a for loop, generate balloons based on the current balloonCount. The position (x and y), size (balloonsize), and color (balloonColor) of each balloon are randomized. Balloons are drawn using ellipse().
+· If balloonCount reaches or exceeds 10, stop generating new balloons by clearing the interval. A console.log is used to inform that the balloon count has reached its limit.
 
-  noStroke();
-
-}
-
-
-function draw() {
-
-  background(220);
-
-  
-  for (let i = 0; i < 10; i++) {
-  
-    let x = random(width);
-    
-    let y = random(height);
-    
-    let balloonsize = random(30, 70);
-    
-    let colorBalloon = color(random(255), random(255), random(255));
-
-    
-    fill(colorBalloon);
-    
-    ellipse(x, y, balloonsize, balloonsize);
-  
-  }
-
-}
+New item
